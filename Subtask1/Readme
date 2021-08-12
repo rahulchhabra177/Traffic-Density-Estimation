@@ -1,0 +1,35 @@
+The contents of this folder have been prepared by Shrey Patel(2019CS10400) and Rahul Chhabra(2019CS11016)
+
+The folder contains three essential things:
+
+1) C++ code using OpenCV, named img.cpp, which takes in a sample image and depending on the user input with the help of mouse clicks, it returns a warped image and a cropped image both of which contain a top view of the area selected by the user.
+
+2) Two sample images: empty.jpg and traffic.jpg 
+
+3) The cmake file CMakeLists.txt which contains cmake code to generate the makefile.
+
+
+--How to setup the Makefile?
+Run the command "cmake CMakeLists.txt" to build various cmake files along with the required Makefile which will help us to build our cpp files.
+	
+--How to compile?
+Type "make all" in command line to build the executable "img". The cmake files take care of linking all the associated OpenCV packages and libraries.
+
+--How to run the executable?
+To execute "img" file, type "./img" in the command line followed by the image you want to input. For e.g. "./img empty.jpg"
+
+--How to give input?
+The user will select four desired points on the image with the help of mouse clicks to decide the area of interest which should be transformed/cropped. The order of selection should start from the top left and proceed in anti-clockwise sense. 
+For e.g. Top Left->Bottom Left->Bottom Right->Top Right. After the point selection, the transformed image can be obtained by pressing the "Enter" key. The cropped image can be obtained by clicking "Enter" again.
+
+--Notes
+1) The build files can be cleaned from the directory by typing "make clean" in command line.
+
+2) Double quotes in this document are not to be literally typed in command line, they have been used to separate actual commands from plain text.
+
+3) After giving the input, the corresponding files will be saved in the same directory as follows:
+	original image -> resized.jpg
+	transformed/warped image -> warped.jpg
+	cropped image -> cropped.jpg
+	
+4) Any failure to follow the above steps for compilation/running/providing input will be accompanied by an error message which will instruct/suggest the correct procedure. 

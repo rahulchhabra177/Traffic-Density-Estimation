@@ -1,0 +1,35 @@
+This folder primarily consists of the report of the entire assignment along with the graphs, tables and
+output files. It also contains auxiliary scripts for extra functions.
+
+Particularly, the "Analysis" folder contains:
+
+1)A folder named Outputs which contains:
+	
+	a)The output .csv files we obtained during the execution of our methods implemented in "Code" b) 
+	folder. 
+	
+	b)The graphs of queue density vs frame for each test-case using the script plot.py
+	
+	c)A script called plot.py which takes the data from the .csv files and plots them using gnuplot
+	This script can be executed from command line using "python plot.py"
+	
+Output File naming convention: out<method-number><testcase-number>.csv 
+
+Graph naming convention: Method<method-number>-<testcase-number>.png
+	
+2)A folder called UtilityFunction which is useful for trade-off analysis. It contains:
+
+	a)A script called util.py which takes the output files as input and produce utility values for 
+	each of the test cases of every method. This script can be executed from command line 
+	using "python plot.py".
+	
+	b)Four output files containing the utility values obtaining by the above script for each of the
+	methods.
+	
+	c)The utility-runtime tradeoff graphs for each of the methods.   
+
+3)A report of the entire assignment including the description and implementation of the original code 
+as well as all the additional methods and their analysis. This analysis includes trade-off analysis and 
+CPU usage as well.
+
+4)A file called "Runtimes" which summarises the execution times of all the test cases.

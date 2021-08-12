@@ -1,0 +1,33 @@
+The contents of this folder have been prepared by Shrey Patel(2019CS10400) and Rahul Chhabra(2019CS11016)
+
+The folder contains four essential things:
+
+1) C++ code using OpenCV, named video.cpp, which takes in a sample video and outputs the values of framenum, queue density, dynamic density in the command line
+
+2) Image of Graph we obtained during execution in our machine whose X axis represents the number of frame and Y axis represents the density.
+
+3)The file out.txt which contains the data using which the graph is plotted.
+
+4) The cmake file CMakeLists.txt which contains cmake code to generate the makefile.
+
+
+--How to setup the Makefile?
+Run the command "cmake CMakeLists.txt" to build various cmake files along with the required Makefile which will help us to build our cpp files.
+	
+--How to compile?
+Type "make all" in command line to build the executable "video". The cmake files take care of linking all the associated OpenCV packages and libraries.
+
+--How to run the executable?
+To execute "video" file, type "./video" in the command line followed by the video you want to input. For e.g. "./video trafficvideo.mp4"
+
+
+--Notes
+1) The build files can be cleaned from the directory by typing "make clean" in command line.
+
+2) Double quotes in this document are not to be literally typed in command line, they have been used to separate actual commands from plain text.
+
+3) Any failure to follow the above steps for compilation/running/providing input will be accompanied by an error message which will instruct/suggest the correct procedure. 
+
+4) The execution of code takes time equal to length of video file provided.
+
+

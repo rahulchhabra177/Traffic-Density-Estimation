@@ -1,0 +1,25 @@
+Original file: video.cpp -> 266 sec
+
+Method 1(Sub-sampling): video_m1.cpp: 1 frame   -> 264 sec
+                                      5 frames  -> 160 sec
+                                      10 frames -> 147 sec
+                                      15 frames -> 139 sec
+                                      20 frames -> 134 sec
+
+Method 2(Resolution Control): video_m2.cpp: 1920*1080 -> 274 sec
+                                            1366*768  -> 238 sec
+                                            1280*720  -> 241 sec
+                                            800*600   -> 244 sec
+                                            300*400   -> 243 sec
+
+Method 3(Spatial Threading): video_m3a.cpp: 1 thread   ->  267 sec 
+                                            2 threads  ->  267 sec
+                                            4 threads  ->  230 sec  
+                                            8 threads  ->  227 sec
+                                            16 threads ->  224 sec
+
+Method 4(Temporal Threading): video_m4.cpp: 1 thread   ->  181 sec
+                                            2 threads  ->  175 sec
+                                            4 threads  ->  178 sec
+                                            8 threads  ->  173 sec
+                                            16 threads ->  176 sec
